@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int t = 1;
+    int z = 3;
+    float y = sin(t);
+
+    float x = 4*pow(y,2)/(4*y*exp(z)-2*pow(t,3));
+
+    printf("%.2f\n", x);
+}
