@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        printf("Error! Use: ./prog <number>\n");
+
+        return 1;
+    }
+
+    int color = atoi(argv[1]);
+    printf("B = %d\n", color & 0xFF);
+    printf("G = %d\n", (color >> 8) & 0xFF);
+    printf("R= %d\n", (color >> 16) & 0xFF);
+
+    return 0;
+}
