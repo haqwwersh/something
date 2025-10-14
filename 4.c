@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main() {
+    
+    int t = 2;
+    int z = 3;
+    
+    float y = cos(t + z);
+    float x = 4 * log(pow(y, 3)) - (float) z / t;
+    printf("%.2f\n", x);
+
+}
