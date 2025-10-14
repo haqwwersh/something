@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        fprintf(stderr, "Использование: %s <число>\n", argv[0]);
+        return 1;
+    }
+
+    int num = atoi(argv[1]);
+    int count = 0;
+
+    for (int i = 0; i < (int)(sizeof(int) * 8); i++) {
+        if ((num >> i) & 1) {
+            count++;
+        }
+    }
+
+    printf("%d\n", count);
+
+    return 0;
+}
