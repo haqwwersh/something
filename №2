@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char** argv) {
+
+ if (argc != 3) {
+  printf("Error! Use: ./prog <number 111>\n");
+
+  return 1;
+ }
+
+ unsigned char a = atoi(argv[1]);
+ int pos = atoi(argv[2]);
+
+ a = a | (1 << pos);
+
+ printf("%d\n", a);
+
+ return 0;
+}
