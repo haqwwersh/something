@@ -11,4 +11,5 @@ int main() {
     float x = 6 * pow(t, 2) - (1/tan(z) + 1) / pow(y,2);
     printf("%.4f\n", x);
 
+
 }
